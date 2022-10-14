@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		180EEC2228F96FB400D2FEE9 /* SwiftUI_DataFlow_HMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EEC2128F96FB400D2FEE9 /* SwiftUI_DataFlow_HMApp.swift */; };
-		180EEC2428F96FB400D2FEE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EEC2328F96FB400D2FEE9 /* ContentView.swift */; };
+		180EEC2428F96FB400D2FEE9 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EEC2328F96FB400D2FEE9 /* RegisterView.swift */; };
 		180EEC2628F96FB500D2FEE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180EEC2528F96FB500D2FEE9 /* Assets.xcassets */; };
 		180EEC2928F96FB500D2FEE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180EEC2828F96FB500D2FEE9 /* Preview Assets.xcassets */; };
+		180EEC3328F97E5200D2FEE9 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EEC3228F97E5200D2FEE9 /* UserInfo.swift */; };
+		180EEC3528F97F8900D2FEE9 /* RegisterTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EEC3428F97F8900D2FEE9 /* RegisterTF.swift */; };
+		180EEC3728F98DE300D2FEE9 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EEC3628F98DE300D2FEE9 /* StarterView.swift */; };
+		180EEC3B28F98F0700D2FEE9 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EEC3A28F98F0700D2FEE9 /* TimerView.swift */; };
+		180EEC3D28F9AC5700D2FEE9 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EEC3C28F9AC5700D2FEE9 /* ButtonView.swift */; };
+		180EEC3F28F9ACD900D2FEE9 /* TimerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EEC3E28F9ACD900D2FEE9 /* TimerCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		180EEC1E28F96FB400D2FEE9 /* SwiftUI DataFlow HM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI DataFlow HM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		180EEC2128F96FB400D2FEE9 /* SwiftUI_DataFlow_HMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_DataFlow_HMApp.swift; sourceTree = "<group>"; };
-		180EEC2328F96FB400D2FEE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		180EEC2328F96FB400D2FEE9 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		180EEC2528F96FB500D2FEE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180EEC2828F96FB500D2FEE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		180EEC3228F97E5200D2FEE9 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		180EEC3428F97F8900D2FEE9 /* RegisterTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTF.swift; sourceTree = "<group>"; };
+		180EEC3628F98DE300D2FEE9 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		180EEC3A28F98F0700D2FEE9 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		180EEC3C28F9AC5700D2FEE9 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		180EEC3E28F9ACD900D2FEE9 /* TimerCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,9 @@
 		180EEC2028F96FB400D2FEE9 /* SwiftUI DataFlow HM */ = {
 			isa = PBXGroup;
 			children = (
-				180EEC2128F96FB400D2FEE9 /* SwiftUI_DataFlow_HMApp.swift */,
-				180EEC2328F96FB400D2FEE9 /* ContentView.swift */,
+				180EEC2F28F97DFF00D2FEE9 /* App */,
+				180EEC3028F97E0500D2FEE9 /* Views */,
+				180EEC3128F97E0D00D2FEE9 /* ObservableObject */,
 				180EEC2528F96FB500D2FEE9 /* Assets.xcassets */,
 				180EEC2728F96FB500D2FEE9 /* Preview Content */,
 			);
@@ -65,6 +78,51 @@
 				180EEC2828F96FB500D2FEE9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		180EEC2F28F97DFF00D2FEE9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				180EEC2128F96FB400D2FEE9 /* SwiftUI_DataFlow_HMApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		180EEC3028F97E0500D2FEE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				180EEC3628F98DE300D2FEE9 /* StarterView.swift */,
+				180EEC3828F98EED00D2FEE9 /* Register */,
+				180EEC3928F98EF600D2FEE9 /* Timer */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		180EEC3128F97E0D00D2FEE9 /* ObservableObject */ = {
+			isa = PBXGroup;
+			children = (
+				180EEC3228F97E5200D2FEE9 /* UserInfo.swift */,
+				180EEC3E28F9ACD900D2FEE9 /* TimerCounter.swift */,
+			);
+			path = ObservableObject;
+			sourceTree = "<group>";
+		};
+		180EEC3828F98EED00D2FEE9 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				180EEC2328F96FB400D2FEE9 /* RegisterView.swift */,
+				180EEC3428F97F8900D2FEE9 /* RegisterTF.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		180EEC3928F98EF600D2FEE9 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				180EEC3A28F98F0700D2FEE9 /* TimerView.swift */,
+				180EEC3C28F9AC5700D2FEE9 /* ButtonView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180EEC2428F96FB400D2FEE9 /* ContentView.swift in Sources */,
+				180EEC3B28F98F0700D2FEE9 /* TimerView.swift in Sources */,
+				180EEC2428F96FB400D2FEE9 /* RegisterView.swift in Sources */,
+				180EEC3728F98DE300D2FEE9 /* StarterView.swift in Sources */,
+				180EEC3328F97E5200D2FEE9 /* UserInfo.swift in Sources */,
+				180EEC3528F97F8900D2FEE9 /* RegisterTF.swift in Sources */,
 				180EEC2228F96FB400D2FEE9 /* SwiftUI_DataFlow_HMApp.swift in Sources */,
+				180EEC3F28F9ACD900D2FEE9 /* TimerCounter.swift in Sources */,
+				180EEC3D28F9AC5700D2FEE9 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
