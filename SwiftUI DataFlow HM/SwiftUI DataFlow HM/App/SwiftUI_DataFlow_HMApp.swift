@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftUI_DataFlow_HMApp: App {
+    
+    @StateObject var userInfo = UserInfo()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StarterView()
+                .environmentObject(userInfo)
         }
     }
 }
