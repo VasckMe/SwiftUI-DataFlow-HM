@@ -10,6 +10,7 @@ import SwiftUI
 struct RegisterView: View {
     
     @EnvironmentObject var userInfo: UserInfo
+    @AppStorage("registered") var registered: Bool = false
     
     @State private var name = ""
     @State private var showAlert = false
@@ -35,6 +36,7 @@ struct RegisterView: View {
         } else {
             userInfo.isLogged.toggle()
             userInfo.name = name
+            registered.toggle()
         }
     }
 }

@@ -12,6 +12,8 @@ struct TimerView: View {
     @EnvironmentObject var userInfo: UserInfo
     @StateObject var timer = TimerCounter(counter: 5)
     
+    @AppStorage("registered") var registered: Bool = false
+
     var body: some View {
         ZStack {
             Color(.black)
@@ -21,9 +23,22 @@ struct TimerView: View {
                     .font(.title)
                 Text("\(timer.counter)")
                     .foregroundColor(.white)
-                    .font(.system(size: 50, weight: .bold))
+                    .font(.system(size: 100, weight: .bold))
                 ButtonView()
                     .environmentObject(timer)
+                Button {
+                    registered.toggle()
+                } label: {
+                    Text("Logout")
+                        .font(.largeTitle)
+                }
+                .foregroundColor(.red)
+                .frame(width: 200, height: 80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                        .stroke(Color.white, lineWidth: 3)
+                )
+                
             }
         }
         .ignoresSafeArea()

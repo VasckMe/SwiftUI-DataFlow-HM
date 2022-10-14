@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ButtonView: View {
     
-    @EnvironmentObject var timer: TimerCounter
+    @EnvironmentObject var timer: TimerCounter    
     
     var body: some View {
         Button {

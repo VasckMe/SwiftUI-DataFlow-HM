@@ -9,5 +9,6 @@ import Combine
 
 final class UserInfo: ObservableObject {
     @Published var isLogged = false
+    
     var name = ""
 }

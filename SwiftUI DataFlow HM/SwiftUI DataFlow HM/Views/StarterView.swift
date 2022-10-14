@@ -11,9 +11,12 @@ struct StarterView: View {
     
     @EnvironmentObject var userInfo: UserInfo
     
+    @AppStorage("registered") var registered: Bool = false
+    
     var body: some View {
+        
         Group {
-            if userInfo.isLogged {
+            if registered {
                 TimerView()
             } else {
                 RegisterView()
