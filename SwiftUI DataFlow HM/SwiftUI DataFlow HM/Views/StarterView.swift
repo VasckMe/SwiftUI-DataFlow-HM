@@ -10,7 +10,6 @@ import SwiftUI
 struct StarterView: View {
     
     @EnvironmentObject var userInfo: UserInfo
-    
     @AppStorage("registered") var registered: Bool = false
     
     var body: some View {
